@@ -28,6 +28,7 @@ public class DynamicProxy implements InvocationHandler {
      * @return
      * @throws Throwable
      */
+    @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("使用动态代理拦截");
         Object invoke = method.invoke(object, args);

@@ -1,4 +1,8 @@
 package com.ngc.javastudy.test;
+import	java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.ngc.javastudy.Dto;
 import com.ngc.javastudy.entiy.Myshow;
@@ -13,7 +17,6 @@ import com.ngc.javastudy.proxy.DynamicProxy;
 public class ProxyTest {
 
     public static void main(String[] args) {
-
         Myshow myshow = new Myshow();
         DynamicProxy dynamicProxy = new DynamicProxy();
 
@@ -22,8 +25,6 @@ public class ProxyTest {
         o.show();
         int show = o.show(1);
         System.out.println(show);
-
-
 
     }
 }
