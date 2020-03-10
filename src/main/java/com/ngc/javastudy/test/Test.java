@@ -1,6 +1,7 @@
 package com.ngc.javastudy.test;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -15,6 +16,7 @@ public class Test {
     public static void main(String[] args) {
 
         List<String> list = new LinkedList<>();
-        list.iterator();
+        Iterator<String> iterator = list.iterator();
+        iterator.next();
     }
 }
