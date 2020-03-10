@@ -15,12 +15,11 @@ public class IteratorTest {
         listContainer.add("2");
         listContainer.add("3");
 
-        System.out.println(listContainer.size());
+        System.out.println("size："+listContainer.size());
 
         while (listContainer.hasNext()){
             System.out.println(listContainer.next());
         }
-
 
     }
 }
