@@ -28,8 +28,8 @@ public class MyProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("方法调用前处理");
-        method.invoke(object,args);
+        Object invoke = method.invoke(object, args);
         System.out.println("方法调用后处理");
-        return "返回值";
+        return invoke;
     }
 }
