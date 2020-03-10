@@ -9,6 +9,8 @@ package com.ngc.javastudy.设计模式.代理;
 public class ProxyTest {
 
     public static void main(String[] args) {
+        //生成代理类的class
+        System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         Man person = new Man();
         MyProxy myProxy = new MyProxy();
         Person proxyInstance = (Person)myProxy.getProxyInstance(person);
