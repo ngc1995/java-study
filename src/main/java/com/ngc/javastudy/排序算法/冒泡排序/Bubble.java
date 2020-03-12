@@ -3,6 +3,8 @@ package com.ngc.javastudy.排序算法.冒泡排序;
 import com.ngc.javastudy.排序算法.ArrayTest;
 import com.ngc.javastudy.排序算法.Show;
 
+import java.util.Arrays;
+
 /**
  * @author nie.gc
  * @version V1.0
@@ -11,9 +13,11 @@ import com.ngc.javastudy.排序算法.Show;
  */
 public class Bubble {
     public static void main(String[] args) {
-        int[] a = ArrayTest.array;
+        int[] a = ArrayTest.array();
+        int[] b = new int[a.length];
+        System.arraycopy(a,0,b,0,a.length);
+
         int min;
-        Show.showAry(a);
         for (int i=1 ; i<= a.length-1 ; i++){
             for (int j=1 ; j<=a.length-i ; j++){
                 if (a[j]<a[j-1]){
@@ -23,6 +27,8 @@ public class Bubble {
                 }
             }
         }
-        Show.showAry(a);
+
+        Arrays.sort(b);
+        Show.compare(a,b);
     }
 }
