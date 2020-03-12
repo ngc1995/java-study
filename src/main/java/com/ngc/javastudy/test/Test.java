@@ -1,5 +1,7 @@
 package com.ngc.javastudy.test;
 
+import com.sun.tools.javac.util.Assert;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -15,8 +17,9 @@ import java.util.Map;
 public class Test {
     public static void main(String[] args) {
 
-        List<String> list = new LinkedList<>();
-        Iterator<String> iterator = list.iterator();
-        iterator.next();
+
+        int i=0;
+        i=i++;
+        System.out.println(i);
     }
 }
