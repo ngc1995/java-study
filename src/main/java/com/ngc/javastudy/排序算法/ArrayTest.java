@@ -10,7 +10,7 @@ import java.util.Random;
  */
 public class ArrayTest {
 
-    public static int[] array = {4,2,6,3,7,9,1,8,5};
+    public static int[] array = {7,2,6,3,4,9,1,8,5};
 
     public static int[] array1 = new int[10000];
 
