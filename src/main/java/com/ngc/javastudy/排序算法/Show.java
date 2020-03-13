@@ -16,9 +16,10 @@ public class Show {
 
     public static void compare(int[] a,int[] b){
         for (int i=0;i<=a.length-1;i++){
-            if (a[i] != b[i])
+            if (a[i] != b[i]) {
                 System.out.println("算法有误");
+                break;
+            }
         }
-        System.out.println("算法无误");
     }
 }

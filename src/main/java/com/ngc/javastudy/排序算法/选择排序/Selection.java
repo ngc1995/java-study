@@ -13,24 +13,19 @@ import java.util.Arrays;
  * @date 2020/3/12 9:57 上午
  */
 public class Selection {
-    public static void main(String[] args) {
-        int[] a = ArrayTest.array();
-        int[] b = new int[a.length];
-        System.arraycopy(a,0,b,0,a.length);
+    public static void sort(int[] a) {
 
+        int t;
         for (int i=0; i<= a.length-1; i++){
-            int min = a[i];
+            int min = i;
             for (int j = i;j<=a.length-1;j++){
-                if (a[j]<min){
-                    min = a[j ];
-                    a[j] = a[i];
-                    a[i] = min;
+                if (a[j]<a[min]){
+                    min = j;
                 }
             }
+            t = a[i];
+            a[i] = a[min];
+            a[min] = t;
         }
-        Arrays.sort(b);
-        Show.compare(a,b);
-
     }
-
 }

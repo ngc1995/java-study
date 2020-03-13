@@ -13,22 +13,16 @@ import java.util.Arrays;
  */
 public class InsertIon {
 
-    public static void main(String[] args) {
-        int[] a = ArrayTest.array();
-        int[] b = new int[a.length];
-        System.arraycopy(a,0,b,0,a.length);
-        for (int i=0; i<= a.length-1; i++){
-            int k = a[i];
-            for (int j = 0;j<i;j++){
-                if (a[j]>k){
+    public static void sort(int[] a) {
+        int k;
+        for (int i=1; i< a.length; i++){
+            for (int j = i;j>0;j--){
+                if (a[j]<a[j-1]){
                     k = a[j];
-                    a[j] = a[i];
-                    a[i] = k;
+                    a[j] = a[j-1];
+                    a[j-1] = k;
                 }
             }
         }
-        Arrays.sort(b);
-        Show.compare(a,b);
     }
-
 }

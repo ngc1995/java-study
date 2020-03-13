@@ -12,10 +12,7 @@ import java.util.Arrays;
  * @date 2020/3/12 10:29 上午
  */
 public class Bubble {
-    public static void main(String[] args) {
-        int[] a = ArrayTest.array();
-        int[] b = new int[a.length];
-        System.arraycopy(a,0,b,0,a.length);
+    public static void sort(int[] a) {
 
         int min;
         for (int i=1 ; i<= a.length-1 ; i++){
@@ -28,7 +25,5 @@ public class Bubble {
             }
         }
 
-        Arrays.sort(b);
-        Show.compare(a,b);
     }
 }

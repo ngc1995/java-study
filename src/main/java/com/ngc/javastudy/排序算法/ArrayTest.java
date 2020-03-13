@@ -16,8 +16,8 @@ public class ArrayTest {
 
     public static int[] array(){
         Random random = new Random();
-        for (int i=0;i<array.length;i++){
-            array[i] = random.nextInt(array.length);
+        for (int i=0;i<array1.length;i++){
+            array1[i] = random.nextInt(10000);
         }
 
         return array1;
