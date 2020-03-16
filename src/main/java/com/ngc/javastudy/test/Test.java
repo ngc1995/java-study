@@ -5,6 +5,7 @@ import com.ngc.javastudy.排序算法.Show;
 import com.ngc.javastudy.排序算法.冒泡排序.Bubble;
 import com.ngc.javastudy.排序算法.希尔排序.Shell;
 import com.ngc.javastudy.排序算法.归并排序.Merge;
+import com.ngc.javastudy.排序算法.快速排序.Quick;
 import com.ngc.javastudy.排序算法.插入排序.InsertIon;
 import com.ngc.javastudy.排序算法.选择排序.Selection;
 import com.sun.tools.javac.util.Assert;
@@ -31,7 +32,7 @@ public class Test {
             System.arraycopy(a, 0, b, 0, a.length);
             Show.showAry(a);
 
-            Merge.sort(a);
+            Quick.sort(a);
 
             Show.showAry(a);
             Arrays.sort(b);
