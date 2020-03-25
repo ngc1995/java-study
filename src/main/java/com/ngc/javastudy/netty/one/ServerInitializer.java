@@ -1,4 +1,4 @@
-package com.ngc.javastudy.netty.first;
+package com.ngc.javastudy.netty.one;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
